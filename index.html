@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavors – Modern Dining</title>
+
+  <!-- Google Font: Poppins (clean, modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__logo-icon material-icons">restaurant</span>
+        <span class="nav__logo-text">Flavors</span>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav__toggle">
+      <label for="nav-toggle" class="nav__hamburger">
+        <span class="material-icons">menu</span>
+      </label>
+
+      <ul class="nav__menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Modern dining, calm ambience</p>
+        <h1>Good food, quietly impressive.</h1>
+        <p class="hero__sub">
+          A simple, seasonal menu served in a warm, minimal space designed for relaxed conversations.
+        </p>
+        <a href="#reserve" class="btn btn--primary">
+          <span class="material-icons">event_available</span>
+          Reserve a table
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PREVIEW -->
+  <section id="menu" class="section section--menu">
+    <div class="section__header">
+      <h2>Simple seasonal menu</h2>
+      <p>Three thoughtful dishes to showcase quality ingredients.</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=600&h=400&q=80"
+          alt="Pasta dish"
+          class="card__image"
+        >
+        <div class="card__content">
+          <h3>Herb Lemon Pasta</h3>
+          <p>Fresh pasta, olive oil, lemon and garden herbs.</p>
+          <div class="card__meta">
+            <span class="card__price">₹520</span>
+            <span class="material-icons card__icon">local_dining</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&h=400&q=80"
+          alt="Grilled plate"
+          class="card__image"
+        >
+        <div class="card__content">
+          <h3>Charred Vegetable Plate</h3>
+          <p>Seasonal vegetables with smoked yogurt and seeds.</p>
+          <div class="card__meta">
+            <span class="card__price">₹480</span>
+            <span class="material-icons card__icon">spa</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&h=400&q=80"
+          alt="Dessert"
+          class="card__image"
+        >
+        <div class="card__content">
+          <h3>Dark Chocolate Tart</h3>
+          <p>70% dark chocolate, sea salt and crème fraîche.</p>
+          <div class="card__meta">
+            <span class="card__price">₹340</span>
+            <span class="material-icons card__icon">cake</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="section section--story">
+    <div class="section__inner section__inner--split">
+      <div class="section__text">
+        <h2>Our story</h2>
+        <p>
+          Flavors was created with one idea: keep things simple, honest and warm.
+          We cook with seasonal ingredients and design the space so you feel unhurried.
+        </p>
+        <p>
+          The menu changes often, but the feeling stays the same — light, uncluttered and welcoming.
+        </p>
+      </div>
+
+      <figure class="section__image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1681270496598-13c5365730c8?fm=jpg&q=60&w=3000&auto=format&fit=crop"
+          alt="Dining table"
+          class="section__image"
+        >
+      </figure>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="section section--reserve">
+    <div class="section__header section__header--reserve">
+      <h2>Reserve a table</h2>
+      <p>Share a few details and we’ll confirm your reservation shortly.</p>
+    </div>
+
+    <div class="reserve-layout">
+      <figure class="reserve-image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?fm=jpg&q=60&w=3000&auto=format&fit=crop"
+          alt="Table reserved at restaurant"
+          class="reserve-image"
+        >
+      </figure>
+
+      <form class="form form--reserve">
+        <div class="form__row">
+          <div class="form__field">
+            <label for="name">Name</label>
+            <div class="form__input-wrapper">
+              <span class="material-icons">person</span>
+              <input id="name" type="text" placeholder="Your name" required>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="phone">Phone</label>
+            <div class="form__input-wrapper">
+              <span class="material-icons">phone</span>
+              <input id="phone" type="tel" placeholder="Your phone number" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="date">Date</label>
+            <div class="form__input-wrapper">
+              <span class="material-icons">event</span>
+              <input id="date" type="date" required>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="time">Time</label>
+            <div class="form__input-wrapper">
+              <span class="material-icons">schedule</span>
+              <input id="time" type="time" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="guests">Guests</label>
+            <div class="form__input-wrapper">
+              <span class="material-icons">group</span>
+              <input id="guests" type="number" min="1" max="12" placeholder="2" required>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--secondary">
+          <span class="material-icons">send</span>
+          Submit request
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Flavors. All rights reserved.</p>
+  </footer>
+</body>
+</html>
